@@ -25,6 +25,29 @@
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
         }
         
+        .banner {
+            background: linear-gradient(45deg, #28a745, #20c997);
+            padding: 15px 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+            animation: pulse 2s infinite;
+        }
+        
+        .banner h2 {
+            color: white;
+            font-size: 1.5em;
+            margin: 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            font-weight: bold;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
         h1 {
             color: white;
             font-size: 2.5em;
@@ -78,7 +101,10 @@
 </head>
 <body>
     <div class="container">
-        <h1>Blinking Names</h1>
+        <div class="banner">
+            <h2>This is our last class</h2>
+        </div>
+        <h1>Infotics Center</h1>
         <div class="names-container">
             <div class="name">Abid</div>
             <div class="name">Noman</div>
